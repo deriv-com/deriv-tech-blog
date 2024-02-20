@@ -7,7 +7,6 @@ This repo contains the theme of Deriv Tech blog (tech.deriv.com)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/deriv-com/deriv-tech-blog)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/deriv-com/deriv-tech-blog)
-![GitHub Workflow Status](https://github.com/deriv-com/deriv-tech-blog/blob/master/.github/workflows/main.yml)
 
 
 # How to contribute
