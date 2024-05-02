@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@e16c8f06af0b2ce61618db9301293850342be29b
         with:
