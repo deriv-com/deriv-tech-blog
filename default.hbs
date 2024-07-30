@@ -8,22 +8,6 @@
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
     {{ghost_head}}
-
-    {{#is "home"}}
-        <!-- Include custom canonical tag for the homepage -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                let defaultCanonical = document.querySelector('link[rel="canonical"]');
-                if (defaultCanonical) {
-                    defaultCanonical.parentNode.removeChild(defaultCanonical);
-                }
-                let customCanonical = document.createElement('link');
-                customCanonical.setAttribute('rel', 'canonical');
-                customCanonical.setAttribute('href', 'https://deriv.com/derivtech');
-                document.head.appendChild(customCanonical);
-            });
-        </script>
-    {{/is}}
 </head>
 
 <body class="{{body_class}}{{block "body_class"}}  is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
